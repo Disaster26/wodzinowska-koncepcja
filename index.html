@@ -10,19 +10,23 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C2F7F'/%3E%3Crect x='9' y='9' width='46' height='46' fill='none' stroke='%23D9A441' stroke-width='3'/%3E%3Crect x='16' y='16' width='32' height='32' fill='none' stroke='%23D9A441' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='18' text-anchor='middle' fill='%23fff'%3EIW%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="fonts/sserif-rdzen.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/sserif-pl.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-pl.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/hero-720.webp" imagesrcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-960.webp 960w, img/hero-1280.webp 1280w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="(max-width:860px) 72vw, 30vw" fetchpriority="high">
 <style>
 @font-face{font-family:"Source Serif";font-weight:400 600;font-display:swap;src:url(fonts/sserif-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
 @font-face{font-family:"Source Serif";font-weight:400 600;font-display:swap;src:url(fonts/sserif-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
 @font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"SS fb";src:local("Georgia");size-adjust:95%;ascent-override:96%;descent-override:30%}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:100%;ascent-override:100%;descent-override:30%}
 :root{--ultra:#1C2F7F;--ultra-d:#142463;--zloto:#D9A441;--zloto-t:#8A6417;--ink:#151A2E;--szary:#F1F3F7;--linia:#D9DDE6;--tekst:#3A4152;--hh:64px}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
-body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 Jost,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 Jost,"Jost fb",Arial,sans-serif;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:"Source Serif",Georgia,serif;color:var(--ink);font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.005em}
+h1,h2,h3{font-family:"Source Serif","SS fb",Georgia,serif;color:var(--ink);font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.005em}
 h2{font-size:clamp(30px,2.6vw + 14px,52px)}
 h3{font-size:clamp(21px,1vw + 15px,26px)}
 p{margin:0 0 1em}
@@ -38,7 +42,7 @@ p{margin:0 0 1em}
 .logo-rama{width:30px;height:38px;flex:none;border:2px solid var(--ultra);position:relative}
 .logo-rama::after{content:"";position:absolute;inset:4px;border:1px solid var(--zloto)}
 .logo-t{display:flex;flex-direction:column;line-height:1.1;min-width:0}
-.logo-t b{font:600 20px/1.1 "Source Serif",Georgia,serif;color:var(--ink);white-space:nowrap}
+.logo-t b{font:600 20px/1.1 "Source Serif","SS fb",Georgia,serif;color:var(--ink);white-space:nowrap}
 .logo-t small{font-size:12.5px;color:#5C6478;letter-spacing:.02em;white-space:nowrap}
 .menu{display:flex;gap:clamp(14px,1.6vw,30px);align-items:center}
 .menu a{text-decoration:none;color:var(--ink);font-weight:500;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
@@ -109,7 +113,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 .pracownia figcaption{font-size:14px;color:#5C6478;padding-top:8px}
 .kroki{margin:0 0 28px;padding:0 0 0 1.3em}
 .kroki li{margin-bottom:14px;padding-left:4px}
-.kroki li::marker{font-family:"Source Serif",Georgia,serif;font-weight:600;color:var(--zloto-t)}
+.kroki li::marker{font-family:"Source Serif","SS fb",Georgia,serif;font-weight:600;color:var(--zloto-t)}
 .kroki b{color:var(--ink)}
 .fakty{margin:0 0 32px;border-top:1px solid var(--linia)}
 .fakty div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--linia)}
@@ -122,7 +126,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 .tradycja{margin-top:28px;padding-top:24px;border-top:1px solid var(--linia)}
 .wystawy ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--linia)}
 .wystawy li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--linia);font-size:16px}
-.wystawy li span{font-family:"Source Serif",Georgia,serif;font-weight:600;color:var(--zloto-t)}
+.wystawy li span{font-family:"Source Serif","SS fb",Georgia,serif;font-weight:600;color:var(--zloto-t)}
 
 /* sklep */
 .sklep-gora{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
@@ -132,7 +136,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 .kat-img{background:var(--szary);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:clamp(16px,2vw,32px);margin-bottom:14px;transition:background .2s}
 .kat:hover .kat-img{background:#E5E9F2}
 .kat-img img{max-height:100%;width:auto;filter:drop-shadow(0 8px 12px rgba(20,30,70,.2))}
-.kat b{font:600 21px/1.2 "Source Serif",Georgia,serif}
+.kat b{font:600 21px/1.2 "Source Serif","SS fb",Georgia,serif}
 .kat small{color:#5C6478;font-size:15px}
 .sklep-dol{margin:26px 0 0;color:#5C6478}
 
@@ -157,7 +161,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 /* stopka */
 .stopka{background:#fff;color:#4A5163;padding:52px 0 24px;font-size:15.5px;border-top:1px solid var(--linia)}
 .stopka a{text-decoration:none}.stopka a:hover{color:var(--ultra)}
-.stopka b{color:var(--ink);font-family:"Source Serif",Georgia,serif;font-size:18px}
+.stopka b{color:var(--ink);font-family:"Source Serif","SS fb",Georgia,serif;font-size:18px}
 .stopka-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;line-height:1.75}
 .stopka-dol{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px;padding-top:18px;border-top:1px solid var(--linia);font-size:14.5px}
 
@@ -254,7 +258,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 <a class="skip" href="#tresc">Przejdź do treści</a>
 <header class="top" id="top">
  <div class="wrap top-in">
-  <a class="logo" href="#top" aria-label="Irena Wodzinowska, strona główna">
+  <a class="logo" href="#top">
    <span class="logo-rama" aria-hidden="true"></span>
    <span class="logo-t"><b>Irena Wodzinowska</b><small>Pracownia malarstwa · Łódź</small></span>
   </a>
@@ -324,7 +328,7 @@ h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-
 
 <section class="sekcja" id="zamowienie" aria-labelledby="h-zam">
  <div class="wrap dwie dwie-odwr">
-  <figure class="pracownia rama"><img src="img/pracownia-640.webp" srcset="img/pracownia-640.webp 640w, img/pracownia-1000.webp 1000w" sizes="(max-width:860px) 92vw, 38vw" width="1000" height="1333" loading="lazy" alt="Praca w pracowni nad dużym portretem Jana Pawła II"><figcaption>W pracowni</figcaption></figure>
+  <figure class="pracownia rama"><img src="img/pracownia-640.webp" srcset="img/pracownia-640.webp 640w, img/pracownia-760.webp 760w, img/pracownia-1000.webp 1000w" sizes="(max-width:860px) 92vw, 38vw" width="1000" height="1333" loading="lazy" alt="Praca w pracowni nad dużym portretem Jana Pawła II"><figcaption>W pracowni</figcaption></figure>
   <div class="kol-txt">
    <h2 id="h-zam">Jak zamówić obraz</h2>
    <ol class="kroki">
