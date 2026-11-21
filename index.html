@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portrety olejne i obrazy sakralne na zamówienie, Łódź | Irena Wodzinowska</title>
+<meta name="description" content="Portrety olejne ze zdjęcia i obrazy sakralne na płótnie na zamówienie. Pracownia Plastyczna Ireny Wodzinowskiej w Łodzi, zamówienia z całej Polski.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1C2F7F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C2F7F'/%3E%3Crect x='9' y='9' width='46' height='46' fill='none' stroke='%23D9A441' stroke-width='3'/%3E%3Crect x='16' y='16' width='32' height='32' fill='none' stroke='%23D9A441' stroke-width='1.5'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='18' text-anchor='middle' fill='%23fff'%3EIW%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sserif-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-720.webp" imagesrcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-960.webp 960w, img/hero-1280.webp 1280w" imagesizes="(max-width:860px) 72vw, 30vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Source Serif";font-weight:400 600;font-display:swap;src:url(fonts/sserif-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Source Serif";font-weight:400 600;font-display:swap;src:url(fonts/sserif-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--ultra:#1C2F7F;--ultra-d:#142463;--zloto:#D9A441;--zloto-t:#8A6417;--ink:#151A2E;--szary:#F1F3F7;--linia:#D9DDE6;--tekst:#3A4152;--hh:64px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 Jost,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Source Serif",Georgia,serif;color:var(--ink);font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.005em}
+h2{font-size:clamp(30px,2.6vw + 14px,52px)}
+h3{font-size:clamp(21px,1vw + 15px,26px)}
+p{margin:0 0 1em}
+.wrap{width:min(92vw,1640px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:99}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--zloto);outline-offset:3px}
+
+/* nagłówek */
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--linia);height:var(--hh)}
+.top-in{height:100%;display:flex;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;min-width:0}
+.logo-rama{width:30px;height:38px;flex:none;border:2px solid var(--ultra);position:relative}
+.logo-rama::after{content:"";position:absolute;inset:4px;border:1px solid var(--zloto)}
+.logo-t{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.logo-t b{font:600 20px/1.1 "Source Serif",Georgia,serif;color:var(--ink);white-space:nowrap}
+.logo-t small{font-size:12.5px;color:#5C6478;letter-spacing:.02em;white-space:nowrap}
+.menu{display:flex;gap:clamp(14px,1.6vw,30px);align-items:center}
+.menu a{text-decoration:none;color:var(--ink);font-weight:500;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a.akt{border-bottom-color:var(--zloto)}
+.menu .menu-tel{color:var(--ultra);font-weight:600;border:1px solid var(--ultra);padding:7px 14px;box-shadow:inset 0 0 0 3px #fff,inset 0 0 0 4px rgba(28,47,127,.35)}
+.tel-ikona,.burger{display:none}
+
+/* przyciski: prostokąt z wewnętrzną listwą jak rama */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;font:600 17px/1 Jost,Arial,sans-serif;text-decoration:none;color:#fff;background:var(--ultra);border:0;cursor:pointer;box-shadow:inset 0 0 0 4px var(--ultra),inset 0 0 0 5px rgba(255,255,255,.55);transition:background .2s}
+.btn:hover{background:var(--ultra-d);box-shadow:inset 0 0 0 4px var(--ultra-d),inset 0 0 0 5px rgba(255,255,255,.7)}
+.btn-zloty{background:var(--zloto);color:#1A1405;box-shadow:inset 0 0 0 4px var(--zloto),inset 0 0 0 5px rgba(26,20,5,.45)}
+.btn-zloty:hover{background:#E6B455;box-shadow:inset 0 0 0 4px #E6B455,inset 0 0 0 5px rgba(26,20,5,.6)}
+.btn-jasny{background:#fff;color:var(--ultra);box-shadow:inset 0 0 0 4px #fff,inset 0 0 0 5px rgba(28,47,127,.4)}
+.btn-jasny:hover{background:#EEF1FA;box-shadow:inset 0 0 0 4px #EEF1FA,inset 0 0 0 5px rgba(28,47,127,.6)}
+
+/* hero: ściana galerii */
+.hero{background:var(--ultra);color:#fff;min-height:calc(100svh - var(--hh));display:flex;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 68% 40%,rgba(255,255,255,.10),transparent 70%);pointer-events:none}
+.hero-in{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);align-items:center;gap:4vw;padding:clamp(28px,5vh,64px) 0;position:relative}
+.hero-txt{order:-1;max-width:660px;position:relative;z-index:2}
+.hero h1{color:#fff;font-size:clamp(40px,2.6vw + 18px,76px);margin-bottom:.45em}
+.hero .lead{font-size:clamp(18px,.5vw + 15px,22px);color:#E4E8F5;max-width:34em;margin-bottom:32px}
+.hero-sciana{position:relative;display:grid;grid-template-columns:1fr 1.75fr 1fr;align-items:center;gap:clamp(18px,2vw,40px);height:min(76svh,820px)}
+.zawieszony{margin:0;height:100%;display:flex;align-items:center;justify-content:center;min-width:0}
+.zawieszony img{max-height:100%;width:auto;filter:drop-shadow(0 18px 26px rgba(5,10,40,.45)) drop-shadow(0 3px 5px rgba(5,10,40,.35))}
+.z1{order:2}
+.z1 img{max-height:100%}
+.z2{order:1}.z3{order:3}
+.z2 img,.z3 img{max-height:58%}
+
+/* sekcje */
+.sekcja{padding:clamp(64px,8vw,128px) 0}
+.szara{background:var(--szary)}
+.ultra{background:var(--ultra);color:#E4E8F5}
+.ultra h2,.ultra h3{color:#fff}
+h2::after{content:"";display:block;width:64px;height:7px;margin-top:18px;border-top:2px solid var(--zloto);border-bottom:1px solid var(--zloto)}
+.dwie{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,5vw,96px);align-items:center}
+.dwie-odwr{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.kol-txt{max-width:640px}
+.drobne{font-size:15.5px;color:#5C6478}
+.rama{margin:0;padding:10px;background:#fff;border:1px solid var(--linia);box-shadow:0 0 0 6px #fff,0 0 0 7px var(--zloto)}
+
+/* karuzele */
+.karuzela{position:relative;min-width:0}
+.tor{display:flex;gap:clamp(14px,1.4vw,26px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:8px 2px 18px;cursor:grab;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.obraz{margin:0;flex:none;scroll-snap-align:start}
+.obraz a{display:block;height:100%}
+.obraz img{height:clamp(260px,30vw,460px);width:auto;max-width:none;transition:transform .25s;-webkit-user-drag:none;user-select:none;filter:drop-shadow(0 8px 14px rgba(20,30,70,.18))}
+.obraz a:hover img{transform:translateY(-3px)}
+.tor-model .obraz img{height:clamp(220px,26vw,420px);filter:none}
+.ster{display:flex;align-items:center;gap:14px;margin-top:6px}
+.strz{width:46px;height:46px;border:1px solid var(--ink);background:#fff;color:var(--ink);font-size:28px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0 0 3px}
+.strz:hover{background:var(--ink);color:#fff}
+.licznik{font-variant-numeric:tabular-nums;color:#5C6478;font-size:15px;min-width:56px;text-align:center}
+
+/* galeria */
+.gal-gora{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.gal-gora h2{margin:0}
+.zakladki{display:flex;gap:8px;flex-wrap:wrap}
+.zakladki button{font:500 16px Jost,Arial,sans-serif;padding:11px 18px;background:#fff;border:1px solid var(--linia);color:var(--ink);cursor:pointer}
+.zakladki button[aria-selected="true"]{background:var(--ultra);color:#fff;border-color:var(--ultra)}
+.gal-dol{margin:22px 0 0;max-width:780px;color:#5C6478}
+
+/* zamówienie */
+.pracownia{max-width:520px;justify-self:center}
+.pracownia figcaption{font-size:14px;color:#5C6478;padding-top:8px}
+.kroki{margin:0 0 28px;padding:0 0 0 1.3em}
+.kroki li{margin-bottom:14px;padding-left:4px}
+.kroki li::marker{font-family:"Source Serif",Georgia,serif;font-weight:600;color:var(--zloto-t)}
+.kroki b{color:var(--ink)}
+.fakty{margin:0 0 32px;border-top:1px solid var(--linia)}
+.fakty div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--linia)}
+.fakty dt{font-weight:600;color:var(--ink)}
+.fakty dd{margin:0}
+
+/* o mnie */
+.omnie{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr) minmax(0,.8fr);gap:clamp(32px,4.5vw,84px);align-items:start}
+.artystka{max-width:280px}
+.tradycja{margin-top:28px;padding-top:24px;border-top:1px solid var(--linia)}
+.wystawy ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--linia)}
+.wystawy li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--linia);font-size:16px}
+.wystawy li span{font-family:"Source Serif",Georgia,serif;font-weight:600;color:var(--zloto-t)}
+
+/* sklep */
+.sklep-gora{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.sklep-gora h2{margin:0}.sklep-gora p{margin:0;max-width:30em}
+.kategorie{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,36px)}
+.kat{text-decoration:none;color:var(--ink);display:flex;flex-direction:column}
+.kat-img{background:var(--szary);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:clamp(16px,2vw,32px);margin-bottom:14px;transition:background .2s}
+.kat:hover .kat-img{background:#E5E9F2}
+.kat-img img{max-height:100%;width:auto;filter:drop-shadow(0 8px 12px rgba(20,30,70,.2))}
+.kat b{font:600 21px/1.2 "Source Serif",Georgia,serif}
+.kat small{color:#5C6478;font-size:15px}
+.sklep-dol{margin:26px 0 0;color:#5C6478}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:start}
+.kontakt-dane p{color:#D5DBEF;font-size:18px}
+.dane{list-style:none;padding:0;margin:0 0 28px;font-size:19px}
+.dane li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.dane a{color:#fff;text-decoration:none;font-weight:500}
+.dane a:hover{color:var(--zloto)}
+.mapa{min-height:52px}
+.mapa iframe{width:100%;height:300px;border:0;display:block;background:#fff}
+.formularz{background:#fff;color:var(--tekst);padding:clamp(22px,3vw,44px);box-shadow:0 0 0 6px var(--ultra),0 0 0 7px var(--zloto)}
+.formularz h3{margin-bottom:18px}
+.formularz label{display:block;font-weight:500;color:var(--ink);font-size:15.5px;margin-bottom:14px}
+.formularz input,.formularz select,.formularz textarea{display:block;width:100%;margin-top:6px;font:400 16px Jost,Arial,sans-serif;padding:12px 13px;border:1px solid #BFC5D3;background:#fff;color:var(--ink);border-radius:0}
+.formularz input[type=file]{padding:10px}
+.formularz input:focus,.formularz select:focus,.formularz textarea:focus{outline:2px solid var(--ultra);outline-offset:0;border-color:var(--ultra)}
+.formularz .btn{width:100%;margin-top:6px}
+.form-info{margin:12px 0 0;font-size:15px;color:var(--ultra);min-height:1.2em}
+
+/* stopka */
+.stopka{background:#fff;color:#4A5163;padding:52px 0 24px;font-size:15.5px;border-top:1px solid var(--linia)}
+.stopka a{text-decoration:none}.stopka a:hover{color:var(--ultra)}
+.stopka b{color:var(--ink);font-family:"Source Serif",Georgia,serif;font-size:18px}
+.stopka-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;line-height:1.75}
+.stopka-dol{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:34px;padding-top:18px;border-top:1px solid var(--linia);font-size:14.5px}
+
+/* pasek dolny (telefon) */
+.pasek{display:none}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,14,32,.94);display:flex;align-items:center;justify-content:center;touch-action:pan-y}
+.lb[hidden]{display:none}
+.lb figure{margin:0;max-width:92vw;max-height:88svh;display:flex;flex-direction:column;align-items:center}
+.lb img{max-width:92vw;max-height:80svh;width:auto;height:auto;object-fit:contain}
+.lb figcaption{color:#DDE2F0;font-size:15px;padding-top:10px;text-align:center}
+.lb button{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35);width:50px;height:50px;font-size:30px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0 0 4px}
+.lb button:hover{background:rgba(255,255,255,.22)}
+.lb-x{top:14px;right:14px}.lb-p{left:14px;top:50%;transform:translateY(-50%)}.lb-nx{right:14px;top:50%;transform:translateY(-50%)}
+
+/* szerokie */
+@media (min-width:1800px){body{font-size:18px}.hero-sciana{height:min(76svh,860px)}}
+@media (max-height:820px) and (min-width:861px){.hero h1{font-size:clamp(36px,2.2vw + 14px,60px)}.hero-sciana{height:min(70svh,600px)}}
+
+/* tablet */
+@media (max-width:1180px){
+ .menu{gap:16px}.menu a{font-size:15px}.menu .menu-tel{display:none}
+ .omnie{grid-template-columns:minmax(0,240px) minmax(0,1fr)}
+ .wystawy{grid-column:1/-1}
+ .kategorie{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+ .menu{position:fixed;top:var(--hh);left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 4vw 22px;border-bottom:1px solid var(--linia);box-shadow:0 18px 30px rgba(20,30,70,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:.2s;max-height:calc(100svh - var(--hh));overflow:auto}
+ .menu.otw{transform:none;opacity:1;visibility:visible}
+ .menu a{font-size:19px;padding:14px 0;border-bottom:1px solid var(--linia);line-height:1.45}
+ .menu a:hover{border-bottom-color:var(--linia);color:var(--ultra)}
+ .menu .menu-tel{display:block;margin-top:16px;text-align:center;border:1px solid var(--ultra)}
+ .burger{display:grid;place-items:center;width:46px;height:46px;background:none;border:1px solid var(--linia);cursor:pointer;gap:0;padding:0;position:relative}
+ .burger span{position:absolute;left:12px;right:12px;height:2px;background:var(--ink);transition:.2s}
+ .burger span:first-child{top:17px}.burger span:last-child{top:26px}
+ .burger[aria-expanded="true"] span:first-child{top:21px;transform:rotate(45deg)}
+ .burger[aria-expanded="true"] span:last-child{top:21px;transform:rotate(-45deg)}
+ .tel-ikona{display:grid;place-items:center;width:46px;height:46px;color:var(--ultra);border:1px solid var(--linia)}
+ .tel-ikona svg{width:22px;height:22px}
+}
+/* telefon */
+@media (max-width:860px){
+ :root{--hh:60px}
+ body{font-size:16.5px}
+ .logo-t b{font-size:18px}.logo-t small{font-size:11.5px}
+ .logo-rama{width:24px;height:31px}
+ .hero{min-height:calc(100svh - var(--hh))}
+ .hero-in{grid-template-columns:1fr;gap:0;padding:0;align-items:stretch;display:flex;flex-direction:column;width:100%}
+ .hero-sciana{width:100%;align-self:stretch}
+ .hero-sciana{display:block;flex:1 1 auto;height:auto;min-height:0;padding:clamp(14px,3svh,26px) 4vw clamp(10px,2svh,18px);position:relative}
+ .z2,.z3{display:none}
+ .z1{position:absolute;inset:clamp(14px,3svh,26px) 4vw clamp(8px,1.6svh,16px);height:auto;display:block}
+ .z1 img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:contain}
+ .hero-sciana{min-height:34svh}
+ .hero-txt{order:0;flex:0 0 auto;padding:0 4vw clamp(22px,4svh,36px);max-width:none;text-align:center}
+ .hero h1{font-size:clamp(27px,4.6svh,38px);margin-bottom:.4em}
+ .hero .lead{font-size:clamp(15px,2.35svh,18px);margin:0 auto 24px;line-height:1.5}
+ .hero .btn{width:100%;max-width:420px}
+ .dwie,.dwie-odwr,.kontakt{grid-template-columns:1fr}
+ .dwie-odwr .pracownia{order:2}
+ .omnie{grid-template-columns:1fr}
+ .artystka{max-width:240px}
+ .obraz img{height:min(64vw,340px)}
+ .tor-model .obraz img{height:auto;width:min(84vw,520px)}
+ .fakty div{grid-template-columns:1fr;gap:2px}
+ .stopka-in{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px}
+ .pasek{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:45;background:#fff;border-top:1px solid var(--linia);transform:translateY(110%);transition:transform .25s;padding:8px 4vw calc(8px + env(safe-area-inset-bottom))}
+ .pasek.widac{transform:none}
+ .pasek a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none;font-weight:600;color:var(--ultra);border:1px solid var(--ultra)}
+ .pasek .pasek-cta{background:var(--zloto);color:#1A1405;border-color:var(--zloto);margin-left:8px}
+ .stopka{padding-bottom:90px}
+ .lb button.lb-n{top:auto;bottom:18px;transform:none}
+}
+@media (max-width:420px){.kategorie{gap:14px}.kat b{font-size:18px}.zakladki button{padding:10px 13px;font-size:15px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+ <div class="wrap top-in">
+  <a class="logo" href="#top" aria-label="Irena Wodzinowska, strona główna">
+   <span class="logo-rama" aria-hidden="true"></span>
+   <span class="logo-t"><b>Irena Wodzinowska</b><small>Pracownia malarstwa · Łódź</small></span>
+  </a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#portrety">Portrety</a>
+   <a href="#galeria">Galeria</a>
+   <a href="#zamowienie">Jak zamówić</a>
+   <a href="#o-mnie">O mnie</a>
+   <a href="#sklep">Sklep</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="menu-tel" href="tel:+48790283541">tel. 790 283 541</a>
+  </nav>
+  <a class="tel-ikona" href="tel:+48790283541" aria-label="Zadzwoń: 790 283 541"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.4 4.2-2 1.4a12 12 0 0 0 5.9 5.9l1.4-2 4.2 1.4v3a1.6 1.6 0 0 1-1.7 1.6A16.6 16.6 0 0 1 5 5.2a1.6 1.6 0 0 1 1.6-1.7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><span></span><span></span></button>
+ </div>
+</header>
+
+<main id="tresc">
+<section class="hero" aria-labelledby="h1">
+ <div class="wrap hero-in">
+  <div class="hero-sciana">
+   <figure class="zawieszony z1"><img src="img/hero-720.webp" srcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-960.webp 960w, img/hero-1280.webp 1280w" sizes="(max-width:860px) 72vw, 30vw" width="720" height="792" fetchpriority="high" alt="Portret kobiety o rudych włosach, olej na płótnie, w srebrnej ramie"></figure>
+   <figure class="zawieszony z2"><img src="img/h2-400.webp" srcset="img/h2-400.webp 400w, img/h2-640.webp 640w" sizes="15vw" width="400" height="518" alt="Matka Boża z Dzieciątkiem, obraz olejny"></figure>
+   <figure class="zawieszony z3"><img src="img/h3-400.webp" srcset="img/h3-400.webp 400w, img/h3-640.webp 640w" sizes="15vw" width="400" height="457" alt="Portret w stylu Dziewczyny z perłą, olej"></figure>
+  </div>
+  <div class="hero-txt">
+   <h1 id="h1">Portrety olejne na zamówienie, malowane ze zdjęcia</h1>
+   <p class="lead">Maluję portrety i obrazy sakralne na płótnie, dawnymi technikami malarskimi. Pracownia w Łodzi, zamówienia z całej Polski.</p>
+   <a class="btn btn-zloty" href="#kontakt">Zamów portret</a>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja" id="portrety" aria-labelledby="h-model">
+ <div class="wrap dwie">
+  <div class="kol-txt">
+   <h2 id="h-model">Z fotografii na płótno</h2>
+   <p>Wystarczy dobre zdjęcie, nawet z telefonu. Pomagam je wybrać, ustalam z Państwem rozmiar, tło i kolorystykę, a w trakcie pracy stale się konsultujemy. Gotowy obraz fotografuję i przesyłam do akceptacji.</p>
+   <p>Zdarzały się zadania bardzo trudne: przedwojenne, czarno-białe zdjęcie zbiorowe, z którego trzeba było wydobyć jedną twarz. Obok kilka portretów zestawionych ze zdjęciem, z którego powstały.</p>
+   <p class="drobne">Zdjęcie do portretu mogę też wykonać w pracowni, bez dodatkowej opłaty.</p>
+  </div>
+  <div class="karuzela" data-k>
+   <div class="tor tor-model"><figure class="obraz"><a href="img/m1-1600.webp" data-lb="model" data-cap="Portret kobiety obok zdjęcia, z którego powstał"><img src="img/m1-720.webp" srcset="img/m1-720.webp 720w, img/m1-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret kobiety obok zdjęcia, z którego powstał"></a></figure><figure class="obraz"><a href="img/m2-1600.webp" data-lb="model" data-cap="Portret w stylu Vermeera obok zdjęcia modelki"><img src="img/m2-720.webp" srcset="img/m2-720.webp 720w, img/m2-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret w stylu Vermeera obok zdjęcia modelki"></a></figure><figure class="obraz"><a href="img/m3-1600.webp" data-lb="model" data-cap="Portret starszego pana obok zdjęcia"><img src="img/m3-720.webp" srcset="img/m3-720.webp 720w, img/m3-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret starszego pana obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m4-1600.webp" data-lb="model" data-cap="Portret dziewczynki obok czarno-białego zdjęcia"><img src="img/m4-720.webp" srcset="img/m4-720.webp 720w, img/m4-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret dziewczynki obok czarno-białego zdjęcia"></a></figure><figure class="obraz"><a href="img/m5-1600.webp" data-lb="model" data-cap="Portret dziewczynki w wianku obok zdjęcia"><img src="img/m5-720.webp" srcset="img/m5-720.webp 720w, img/m5-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret dziewczynki w wianku obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m6-1600.webp" data-lb="model" data-cap="Portret mężczyzny obok zdjęcia"><img src="img/m6-720.webp" srcset="img/m6-720.webp 720w, img/m6-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret mężczyzny obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m7-1600.webp" data-lb="model" data-cap="Portret w stroju kontuszowym obok zdjęcia"><img src="img/m7-720.webp" srcset="img/m7-720.webp 720w, img/m7-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret w stroju kontuszowym obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m8-1600.webp" data-lb="model" data-cap="Portret matki z dzieckiem obok zdjęcia"><img src="img/m8-720.webp" srcset="img/m8-720.webp 720w, img/m8-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret matki z dzieckiem obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m9-1600.webp" data-lb="model" data-cap="Portret starszej pani obok zdjęcia"><img src="img/m9-720.webp" srcset="img/m9-720.webp 720w, img/m9-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret starszej pani obok zdjęcia"></a></figure><figure class="obraz"><a href="img/m10-1600.webp" data-lb="model" data-cap="Portret kobiety w okularach obok zdjęcia"><img src="img/m10-720.webp" srcset="img/m10-720.webp 720w, img/m10-1200.webp 1200w" sizes="(max-width:860px) 84vw, 40vw" width="720" height="480" loading="lazy" decoding="async" alt="Portret kobiety w okularach obok zdjęcia"></a></figure></div>
+   <div class="ster"><button class="strz" data-dir="-1" aria-label="Poprzednie">&#8249;</button><span class="licznik" aria-live="polite">1 / 10</span><button class="strz" data-dir="1" aria-label="Następne">&#8250;</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja szara" id="galeria" aria-labelledby="h-gal">
+ <div class="wrap">
+  <div class="gal-gora">
+   <h2 id="h-gal">Galeria prac</h2>
+   <div class="zakladki" role="tablist" aria-label="Kategorie galerii">
+    <button role="tab" aria-selected="true" data-tab="g-p">Portrety</button>
+    <button role="tab" aria-selected="false" data-tab="g-s">Obrazy sakralne</button>
+    <button role="tab" aria-selected="false" data-tab="g-l">Łódź</button>
+    <button role="tab" aria-selected="false" data-tab="g-d">Psy</button>
+   </div>
+  </div>
+  <div class="karuzela panel" id="g-p" role="tabpanel" data-k><div class="tor"><figure class="obraz"><a href="img/p1-1600.webp" data-lb="p" data-cap="Portret kobiety o rudych włosach, olej na płótnie"><img src="img/p1-480.webp" srcset="img/p1-480.webp 480w, img/p1-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="528" loading="lazy" decoding="async" alt="Portret kobiety o rudych włosach, olej na płótnie"></a></figure><figure class="obraz"><a href="img/p2-1600.webp" data-lb="p" data-cap="Portret w stylu Dziewczyny z perłą, olej"><img src="img/p2-480.webp" srcset="img/p2-480.webp 480w, img/p2-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="549" loading="lazy" decoding="async" alt="Portret w stylu Dziewczyny z perłą, olej"></a></figure><figure class="obraz"><a href="img/p3-1600.webp" data-lb="p" data-cap="Portret dziewczynki w wianku, olej"><img src="img/p3-480.webp" srcset="img/p3-480.webp 480w, img/p3-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="597" loading="lazy" decoding="async" alt="Portret dziewczynki w wianku, olej"></a></figure><figure class="obraz"><a href="img/p4-1600.webp" data-lb="p" data-cap="Portret kobiety w czerwonym szalu, olej"><img src="img/p4-480.webp" srcset="img/p4-480.webp 480w, img/p4-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="616" loading="lazy" decoding="async" alt="Portret kobiety w czerwonym szalu, olej"></a></figure><figure class="obraz"><a href="img/p5-1600.webp" data-lb="p" data-cap="Portret starszego mężczyzny przy książkach, olej"><img src="img/p5-480.webp" srcset="img/p5-480.webp 480w, img/p5-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="571" loading="lazy" decoding="async" alt="Portret starszego mężczyzny przy książkach, olej"></a></figure><figure class="obraz"><a href="img/p6-1600.webp" data-lb="p" data-cap="Portret kobiety w niebieskich okularach, olej"><img src="img/p6-480.webp" srcset="img/p6-480.webp 480w, img/p6-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="537" loading="lazy" decoding="async" alt="Portret kobiety w niebieskich okularach, olej"></a></figure><figure class="obraz"><a href="img/p7-1600.webp" data-lb="p" data-cap="Portret pary, olej na płótnie"><img src="img/p7-480.webp" srcset="img/p7-480.webp 480w, img/p7-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="384" loading="lazy" decoding="async" alt="Portret pary, olej na płótnie"></a></figure><figure class="obraz"><a href="img/p8-1600.webp" data-lb="p" data-cap="Portret młodej kobiety, olej"><img src="img/p8-480.webp" srcset="img/p8-480.webp 480w, img/p8-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="609" loading="lazy" decoding="async" alt="Portret młodej kobiety, olej"></a></figure><figure class="obraz"><a href="img/p9-1600.webp" data-lb="p" data-cap="Portret matki z dzieckiem, olej"><img src="img/p9-480.webp" srcset="img/p9-480.webp 480w, img/p9-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="565" loading="lazy" decoding="async" alt="Portret matki z dzieckiem, olej"></a></figure><figure class="obraz"><a href="img/p10-1600.webp" data-lb="p" data-cap="Portret starszej pani w złotej ramie, olej"><img src="img/p10-480.webp" srcset="img/p10-480.webp 480w, img/p10-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="562" loading="lazy" decoding="async" alt="Portret starszej pani w złotej ramie, olej"></a></figure><figure class="obraz"><a href="img/p11-1600.webp" data-lb="p" data-cap="Portret mężczyzny z cygarem, olej"><img src="img/p11-480.webp" srcset="img/p11-480.webp 480w, img/p11-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="383" loading="lazy" decoding="async" alt="Portret mężczyzny z cygarem, olej"></a></figure><figure class="obraz"><a href="img/p12-1600.webp" data-lb="p" data-cap="Portret chłopca w kapturze, olej"><img src="img/p12-480.webp" srcset="img/p12-480.webp 480w, img/p12-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="567" loading="lazy" decoding="async" alt="Portret chłopca w kapturze, olej"></a></figure><figure class="obraz"><a href="img/p13-1600.webp" data-lb="p" data-cap="Portret dziewczyny w kapeluszu, olej"><img src="img/p13-480.webp" srcset="img/p13-480.webp 480w, img/p13-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="671" loading="lazy" decoding="async" alt="Portret dziewczyny w kapeluszu, olej"></a></figure><figure class="obraz"><a href="img/p14-1600.webp" data-lb="p" data-cap="Portret mężczyzny w stroju kontuszowym, olej"><img src="img/p14-480.webp" srcset="img/p14-480.webp 480w, img/p14-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="620" loading="lazy" decoding="async" alt="Portret mężczyzny w stroju kontuszowym, olej"></a></figure><figure class="obraz"><a href="img/p15-1600.webp" data-lb="p" data-cap="Portret kobiety, olej na płótnie"><img src="img/p15-480.webp" srcset="img/p15-480.webp 480w, img/p15-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="570" loading="lazy" decoding="async" alt="Portret kobiety, olej na płótnie"></a></figure><figure class="obraz"><a href="img/p16-1600.webp" data-lb="p" data-cap="Portret podwójny, olej na płótnie"><img src="img/p16-480.webp" srcset="img/p16-480.webp 480w, img/p16-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="395" loading="lazy" decoding="async" alt="Portret podwójny, olej na płótnie"></a></figure></div><div class="ster"><button class="strz" data-dir="-1" aria-label="Poprzednie">&#8249;</button><span class="licznik">1 / 16</span><button class="strz" data-dir="1" aria-label="Następne">&#8250;</button></div></div>
+  <div class="karuzela panel" id="g-s" role="tabpanel" data-k hidden><div class="tor"><figure class="obraz"><a href="img/s1-1600.webp" data-lb="s" data-cap="Matka Boża z Dzieciątkiem, olej"><img src="img/s1-480.webp" srcset="img/s1-480.webp 480w, img/s1-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="621" loading="lazy" decoding="async" alt="Matka Boża z Dzieciątkiem, olej"></a></figure><figure class="obraz"><a href="img/s2-1600.webp" data-lb="s" data-cap="Matka Boża Częstochowska, olej"><img src="img/s2-480.webp" srcset="img/s2-480.webp 480w, img/s2-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="633" loading="lazy" decoding="async" alt="Matka Boża Częstochowska, olej"></a></figure><figure class="obraz"><a href="img/s3-1600.webp" data-lb="s" data-cap="Święty Charbel, olej"><img src="img/s3-480.webp" srcset="img/s3-480.webp 480w, img/s3-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="593" loading="lazy" decoding="async" alt="Święty Charbel, olej"></a></figure><figure class="obraz"><a href="img/s4-1600.webp" data-lb="s" data-cap="Chrystus modlący się, Kyrie eleison, olej"><img src="img/s4-480.webp" srcset="img/s4-480.webp 480w, img/s4-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="551" loading="lazy" decoding="async" alt="Chrystus modlący się, Kyrie eleison, olej"></a></figure><figure class="obraz"><a href="img/s5-1600.webp" data-lb="s" data-cap="Najświętsze Serce Pana Jezusa, olej"><img src="img/s5-480.webp" srcset="img/s5-480.webp 480w, img/s5-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="576" loading="lazy" decoding="async" alt="Najświętsze Serce Pana Jezusa, olej"></a></figure><figure class="obraz"><a href="img/s6-1600.webp" data-lb="s" data-cap="Niepokalane Serce Maryi, olej"><img src="img/s6-480.webp" srcset="img/s6-480.webp 480w, img/s6-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="574" loading="lazy" decoding="async" alt="Niepokalane Serce Maryi, olej"></a></figure><figure class="obraz"><a href="img/s7-1600.webp" data-lb="s" data-cap="Święty Ojciec Pio, olej"><img src="img/s7-480.webp" srcset="img/s7-480.webp 480w, img/s7-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="478" loading="lazy" decoding="async" alt="Święty Ojciec Pio, olej"></a></figure><figure class="obraz"><a href="img/s8-1600.webp" data-lb="s" data-cap="Jezus Miłosierny i św. Faustyna, olej"><img src="img/s8-480.webp" srcset="img/s8-480.webp 480w, img/s8-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="791" loading="lazy" decoding="async" alt="Jezus Miłosierny i św. Faustyna, olej"></a></figure><figure class="obraz"><a href="img/s9-1600.webp" data-lb="s" data-cap="Benedykt XVI, olej"><img src="img/s9-480.webp" srcset="img/s9-480.webp 480w, img/s9-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="820" loading="lazy" decoding="async" alt="Benedykt XVI, olej"></a></figure><figure class="obraz"><a href="img/s10-1600.webp" data-lb="s" data-cap="Święty Jan Paweł II, olej"><img src="img/s10-480.webp" srcset="img/s10-480.webp 480w, img/s10-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="550" loading="lazy" decoding="async" alt="Święty Jan Paweł II, olej"></a></figure><figure class="obraz"><a href="img/s11-1600.webp" data-lb="s" data-cap="Jezus Miłosierny, olej"><img src="img/s11-480.webp" srcset="img/s11-480.webp 480w, img/s11-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="847" loading="lazy" decoding="async" alt="Jezus Miłosierny, olej"></a></figure><figure class="obraz"><a href="img/s12-1600.webp" data-lb="s" data-cap="Matka Boża Cesarzowa Chin, olej"><img src="img/s12-480.webp" srcset="img/s12-480.webp 480w, img/s12-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="631" loading="lazy" decoding="async" alt="Matka Boża Cesarzowa Chin, olej"></a></figure><figure class="obraz"><a href="img/s13-1600.webp" data-lb="s" data-cap="Oblicze Chrystusa, olej"><img src="img/s13-480.webp" srcset="img/s13-480.webp 480w, img/s13-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="615" loading="lazy" decoding="async" alt="Oblicze Chrystusa, olej"></a></figure><figure class="obraz"><a href="img/s14-1600.webp" data-lb="s" data-cap="Papież Franciszek, olej"><img src="img/s14-480.webp" srcset="img/s14-480.webp 480w, img/s14-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="400" loading="lazy" decoding="async" alt="Papież Franciszek, olej"></a></figure></div><div class="ster"><button class="strz" data-dir="-1" aria-label="Poprzednie">&#8249;</button><span class="licznik">1 / 14</span><button class="strz" data-dir="1" aria-label="Następne">&#8250;</button></div></div>
+  <div class="karuzela panel" id="g-l" role="tabpanel" data-k hidden><div class="tor"><figure class="obraz"><a href="img/l1-1600.webp" data-lb="l" data-cap="Łódź, kościół, obraz olejny"><img src="img/l1-480.webp" srcset="img/l1-480.webp 480w, img/l1-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="409" loading="lazy" decoding="async" alt="Łódź, kościół, obraz olejny"></a></figure><figure class="obraz"><a href="img/l2-1600.webp" data-lb="l" data-cap="Łódź, kamienica na tle błękitu, obraz"><img src="img/l2-480.webp" srcset="img/l2-480.webp 480w, img/l2-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="563" loading="lazy" decoding="async" alt="Łódź, kamienica na tle błękitu, obraz"></a></figure><figure class="obraz"><a href="img/l3-1600.webp" data-lb="l" data-cap="Łódź, Księży Młyn nad wodą, obraz"><img src="img/l3-480.webp" srcset="img/l3-480.webp 480w, img/l3-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="379" loading="lazy" decoding="async" alt="Łódź, Księży Młyn nad wodą, obraz"></a></figure><figure class="obraz"><a href="img/l4-1600.webp" data-lb="l" data-cap="Łódź, katedra, obraz"><img src="img/l4-480.webp" srcset="img/l4-480.webp 480w, img/l4-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="720" loading="lazy" decoding="async" alt="Łódź, katedra, obraz"></a></figure><figure class="obraz"><a href="img/l5-1600.webp" data-lb="l" data-cap="Łódź, pałac, obraz"><img src="img/l5-480.webp" srcset="img/l5-480.webp 480w, img/l5-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="402" loading="lazy" decoding="async" alt="Łódź, pałac, obraz"></a></figure><figure class="obraz"><a href="img/l6-1600.webp" data-lb="l" data-cap="Łódź, fontanna we mgle, obraz"><img src="img/l6-480.webp" srcset="img/l6-480.webp 480w, img/l6-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="599" loading="lazy" decoding="async" alt="Łódź, fontanna we mgle, obraz"></a></figure><figure class="obraz"><a href="img/l7-1600.webp" data-lb="l" data-cap="Łódź, secesyjna kamienica, obraz"><img src="img/l7-480.webp" srcset="img/l7-480.webp 480w, img/l7-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="701" loading="lazy" decoding="async" alt="Łódź, secesyjna kamienica, obraz"></a></figure><figure class="obraz"><a href="img/l8-1600.webp" data-lb="l" data-cap="Łódź, cerkiew, obraz"><img src="img/l8-480.webp" srcset="img/l8-480.webp 480w, img/l8-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="381" loading="lazy" decoding="async" alt="Łódź, cerkiew, obraz"></a></figure></div><div class="ster"><button class="strz" data-dir="-1" aria-label="Poprzednie">&#8249;</button><span class="licznik">1 / 8</span><button class="strz" data-dir="1" aria-label="Następne">&#8250;</button></div></div>
+  <div class="karuzela panel" id="g-d" role="tabpanel" data-k hidden><div class="tor"><figure class="obraz"><a href="img/d1-1600.webp" data-lb="d" data-cap="Pies, rysunek pastelą"><img src="img/d1-480.webp" srcset="img/d1-480.webp 480w, img/d1-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="604" loading="lazy" decoding="async" alt="Pies, rysunek pastelą"></a></figure><figure class="obraz"><a href="img/d2-1600.webp" data-lb="d" data-cap="Pies, rysunek pastelą"><img src="img/d2-480.webp" srcset="img/d2-480.webp 480w, img/d2-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="602" loading="lazy" decoding="async" alt="Pies, rysunek pastelą"></a></figure><figure class="obraz"><a href="img/d3-1600.webp" data-lb="d" data-cap="Pies, rysunek pastelą"><img src="img/d3-480.webp" srcset="img/d3-480.webp 480w, img/d3-800.webp 800w" sizes="(max-width:860px) 60vw, 26vw" width="480" height="604" loading="lazy" decoding="async" alt="Pies, rysunek pastelą"></a></figure></div><div class="ster"><button class="strz" data-dir="-1" aria-label="Poprzednie">&#8249;</button><span class="licznik">1 / 3</span><button class="strz" data-dir="1" aria-label="Następne">&#8250;</button></div></div>
+  <p class="gal-dol">Obrazy sakralne malowałam między innymi dla parafii w Głuchowie (portret Jana Pawła II, 220 x 120 cm) i dla sióstr bernardynek z klasztoru w Brzezinach.</p>
+ </div>
+</section>
+
+<section class="sekcja" id="zamowienie" aria-labelledby="h-zam">
+ <div class="wrap dwie dwie-odwr">
+  <figure class="pracownia rama"><img src="img/pracownia-640.webp" srcset="img/pracownia-640.webp 640w, img/pracownia-1000.webp 1000w" sizes="(max-width:860px) 92vw, 38vw" width="1000" height="1333" loading="lazy" alt="Praca w pracowni nad dużym portretem Jana Pawła II"><figcaption>W pracowni</figcaption></figure>
+  <div class="kol-txt">
+   <h2 id="h-zam">Jak zamówić obraz</h2>
+   <ol class="kroki">
+    <li><b>Zdjęcie.</b> Proszę przesłać fotografię mailem, pocztą albo przynieść ją do pracowni (po wcześniejszym umówieniu).</li>
+    <li><b>Szczegóły.</b> Ustalamy rozmiar, tło, kolorystykę, termin i sposób odbioru. Podaję cenę i termin wykonania.</li>
+    <li><b>Zadatek.</b> Najczęściej 50% uzgodnionej ceny, reszta przy odbiorze gotowego obrazu.</li>
+    <li><b>Akceptacja i odbiór.</b> Gotowy obraz fotografuję i przesyłam do akceptacji. Można go odebrać w pracowni albo wysyłam go zabezpieczonego pocztą lub kurierem.</li>
+   </ol>
+   <dl class="fakty">
+    <div><dt>Czas pracy</dt><dd>przeciętnie od 2 do 8 tygodni, zależnie od trudności</dd></div>
+    <div><dt>Technika</dt><dd>olej na płótnie, pastel, rysunek</dd></div>
+    <div><dt>Każdy obraz</dt><dd>podpisany i datowany</dd></div>
+   </dl>
+   <a class="btn" href="#kontakt">Zapytaj o portret</a>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja szara" id="o-mnie" aria-labelledby="h-omnie">
+ <div class="wrap omnie">
+  <figure class="artystka rama"><img src="img/irena-560.webp" width="560" height="832" loading="lazy" alt="Irena Wodzinowska, artystka malarka"></figure>
+  <div class="kol-txt">
+   <h2 id="h-omnie">O mnie</h2>
+   <p>Ukończyłam Akademię Sztuk Pięknych w Łodzi z tytułem magistra sztuki, jestem też technikiem konserwacji dzieł sztuki. Specjalizuję się w malarstwie portretowym i sakralnym. Malowałam dla osób prywatnych, firm, instytucji i parafii. W łódzkiej pracowni można zamówić portret albo obejrzeć inne prace. Raz w tygodniu prowadzę lekcje malarstwa i rysunku.</p>
+   <p>Inną moją pasją jest fotografia. Często sama robię zdjęcie modela, na podstawie którego potem maluję obraz.</p>
+   <div class="tradycja">
+    <h3>Rodzinna tradycja</h3>
+    <p>Mój stryjeczny dziadek, Wincenty Wodzinowski (1866-1940), był krakowskim malarzem, uczniem Jana Matejki i jednym z dziewięciu współautorów Panoramy Racławickiej. Jego autorstwa jest postać Kościuszki.</p>
+   </div>
+  </div>
+  <div class="wystawy">
+   <h3>Wybrane wystawy</h3>
+   <ul>
+    <li><span>2019</span>Wystawa indywidualna, Galeria Politechnika, Łódź</li>
+    <li><span>2019</span>Grafiki o Łodzi, Targi Mieszkań i Domów, Hala Expo, Łódź</li>
+    <li><span>2016</span>Malarstwo portretowe i sakralne, Galeria u Panien, Piotrków Trybunalski</li>
+    <li><span>2014</span>Malarstwo sakralne, Międzynarodowe Targi Sakralne LUBSACRO, Lublin</li>
+    <li><span>2014</span>Galeria Centrum Dialogu, Toruń</li>
+    <li><span>2013</span>Galeria Stacja Nowa Gdynia, Zgierz</li>
+    <li><span>2009</span>Malarstwo Dawna Łódź, Galeria Carte Blanche, Łódź</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja" id="sklep" aria-labelledby="h-sklep">
+ <div class="wrap">
+  <div class="sklep-gora">
+   <h2 id="h-sklep">Gotowe prace w sklepie</h2>
+   <p>Obrazy oprawione w ramy, grafiki i rysunki, które można kupić od razu.</p>
+  </div>
+  <div class="kategorie">
+   <a class="kat" href="#kontakt"><span class="kat-img"><img src="img/p1-480.webp" srcset="img/p1-480.webp 480w, img/p1-800.webp 800w" sizes="(max-width:1180px) 44vw, 22vw" width="480" height="528" loading="lazy" alt="Portrety w sklepie"></span><b>Portrety</b><small>8 prac</small></a>
+   <a class="kat" href="#kontakt"><span class="kat-img"><img src="img/s10-480.webp" srcset="img/s10-480.webp 480w, img/s10-800.webp 800w" sizes="(max-width:1180px) 44vw, 22vw" width="480" height="550" loading="lazy" alt="Obrazy sakralne w sklepie"></span><b>Obrazy sakralne</b><small>8 prac</small></a>
+   <a class="kat" href="#kontakt"><span class="kat-img"><img src="img/d3-480.webp" srcset="img/d3-480.webp 480w, img/d3-800.webp 800w" sizes="(max-width:1180px) 44vw, 22vw" width="480" height="604" loading="lazy" alt="Zwierzęta w sklepie"></span><b>Zwierzęta</b><small>5 prac</small></a>
+   <a class="kat" href="#kontakt"><span class="kat-img"><img src="img/l2-480.webp" srcset="img/l2-480.webp 480w, img/l2-800.webp 800w" sizes="(max-width:1180px) 44vw, 22vw" width="480" height="563" loading="lazy" alt="Grafika w sklepie"></span><b>Grafika</b><small>13 prac</small></a>
+  </div>
+  <p class="sklep-dol">Część prac jest też w sklepie na Etsy (WodzinowskaART).</p>
+ </div>
+</section>
+
+<section class="sekcja ultra" id="kontakt" aria-labelledby="h-kontakt">
+ <div class="wrap kontakt">
+  <div class="kontakt-dane">
+   <h2 id="h-kontakt">Porozmawiajmy o Państwa obrazie</h2>
+   <p>Zapytania, porady, konsultacje. Najszybciej telefonicznie albo mailem.</p>
+   <ul class="dane">
+    <li><a href="tel:+48790283541">tel. 790 283 541</a></li>
+    <li><a href="mailto:irena@wodzinowska.pl">irena@wodzinowska.pl</a></li>
+    <li>Pracownia Plastyczna Irena Wodzinowska<br>al. Wyszyńskiego 31 lok. 94, 94-047 Łódź</li>
+   </ul>
+   <div class="mapa" id="mapa"><button class="btn btn-jasny" id="mapa-btn" type="button">Pokaż mapę dojazdu</button></div>
+  </div>
+  <form class="formularz" id="form" novalidate>
+   <h3>Zapytanie o obraz</h3>
+   <label>Imię<input name="imie" autocomplete="given-name" required></label>
+   <label>Telefon lub e-mail<input name="kontakt" autocomplete="email" required></label>
+   <label>Co chcą Państwo zamówić?
+    <select name="rodzaj"><option>Portret ze zdjęcia</option><option>Obraz sakralny</option><option>Gotowy obraz ze sklepu</option><option>Inny temat</option></select></label>
+   <label>Zdjęcie do portretu (opcjonalnie)<input type="file" name="zdjecie" accept="image/*"></label>
+   <label>Wiadomość<textarea name="wiad" rows="4" placeholder="np. portret rodziców na rocznicę, ok. 50 x 70 cm"></textarea></label>
+   <button class="btn btn-zloty" type="submit">Wyślij zapytanie</button>
+   <p class="form-info" id="form-info" role="status"></p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap stopka-in">
+  <div><b>Irena Wodzinowska</b><br>Pracownia Plastyczna<br>al. Wyszyńskiego 31 lok. 94<br>94-047 Łódź</div>
+  <div><a href="tel:+48790283541">790 283 541</a><br><a href="mailto:irena@wodzinowska.pl">irena@wodzinowska.pl</a></div>
+  <div><a href="#portrety">Portrety ze zdjęcia</a><br><a href="#galeria">Galeria</a><br><a href="#zamowienie">Jak zamówić</a></div>
+  <div><a href="#o-mnie">O mnie</a><br><a href="#sklep">Sklep</a><br><a href="#kontakt">Kontakt</a></div>
+ </div>
+ <div class="wrap stopka-dol"><span>© 2026 Irena Wodzinowska</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=wodzinowska.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</footer>
+
+<div class="pasek" id="pasek"><a href="tel:+48790283541">Zadzwoń</a><a class="pasek-cta" href="#kontakt">Zamów portret</a></div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Powiększenie obrazu">
+ <button class="lb-x" aria-label="Zamknij">&times;</button>
+ <button class="lb-n lb-p" aria-label="Poprzedni">&#8249;</button>
+ <figure><img alt=""><figcaption></figcaption></figure>
+ <button class="lb-n lb-nx" aria-label="Następny">&#8250;</button>
+</div>
+<script>
+(function(){
+var d=document;
+// menu
+var b=d.getElementById('burger'),m=d.getElementById('menu');
+function zamknij(){m.classList.remove('otw');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Otwórz menu')}
+b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu')});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamknij)});
+d.addEventListener('keydown',function(e){if(e.key==='Escape')zamknij()});
+// aktywna pozycja menu
+var linki=[].slice.call(m.querySelectorAll('a[href^="#"]'));
+if('IntersectionObserver' in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ linki.forEach(function(a){var s=d.querySelector(a.getAttribute('href'));if(s)io.observe(s)});
+ // pasek dolny po przewinięciu za hero
+ var p=d.getElementById('pasek'),h=d.querySelector('.hero .btn');
+ new IntersectionObserver(function(es){p.classList.toggle('widac',!es[0].isIntersecting&&es[0].boundingClientRect.top<0)}).observe(h);
+}
+// karuzele
+d.querySelectorAll('[data-k]').forEach(function(k){
+ var t=k.querySelector('.tor'),l=k.querySelector('.licznik'),items=t.children,n=items.length;
+ function idx(){var x=t.scrollLeft,best=0,bd=1e9;for(var i=0;i<n;i++){var dd=Math.abs(items[i].offsetLeft-t.offsetLeft-x);if(dd<bd){bd=dd;best=i}}if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4)best=n-1;return best}
+ function upd(){if(l)l.textContent=(idx()+1)+' / '+n}
+ t.addEventListener('scroll',function(){clearTimeout(t._u);t._u=setTimeout(upd,60)},{passive:true});
+ k.querySelectorAll('.strz').forEach(function(s){s.addEventListener('click',function(){var i=Math.max(0,Math.min(n-1,idx()+(+s.dataset.dir)));t.scrollTo({left:items[i].offsetLeft-t.offsetLeft,behavior:'smooth'})})});
+ // przeciąganie myszą
+ var dn=false,sx=0,sl=0,ruch=0;
+ t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;ruch=0;sx=e.clientX;sl=t.scrollLeft});
+ window.addEventListener('pointermove',function(e){if(!dn)return;var dx=e.clientX-sx;ruch=Math.max(ruch,Math.abs(dx));if(ruch>5){t.classList.add('ciag');t.scrollLeft=sl-dx}});
+ window.addEventListener('pointerup',function(){if(!dn)return;dn=false;if(t.classList.contains('ciag')){t.classList.remove('ciag');var i=idx();t.scrollTo({left:items[i].offsetLeft-t.offsetLeft,behavior:'smooth'})}});
+ t.addEventListener('click',function(e){if(ruch>5){e.preventDefault();e.stopPropagation();ruch=0}},true);
+ t.addEventListener('dragstart',function(e){e.preventDefault()});
+});
+// zakładki galerii
+var tabs=[].slice.call(d.querySelectorAll('[data-tab]'));
+tabs.forEach(function(tb){tb.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===tb);d.getElementById(x.dataset.tab).hidden=x!==tb})})});
+// lightbox
+var lb=d.getElementById('lb'),li=lb.querySelector('img'),lc=lb.querySelector('figcaption'),grupa=[],poz=0,ost=null;
+function pokaz(i){poz=(i+grupa.length)%grupa.length;var a=grupa[poz];li.src=a.getAttribute('href');li.alt=a.querySelector('img').alt;lc.textContent=a.dataset.cap+'  ('+(poz+1)+' / '+grupa.length+')'}
+d.addEventListener('click',function(e){var a=e.target.closest('a[data-lb]');if(!a)return;e.preventDefault();ost=a;grupa=[].slice.call(d.querySelectorAll('a[data-lb="'+a.dataset.lb+'"]'));lb.hidden=false;d.body.style.overflow='hidden';pokaz(grupa.indexOf(a));lb.querySelector('.lb-x').focus()});
+function zam(){lb.hidden=true;li.removeAttribute('src');d.body.style.overflow='';if(ost)ost.focus()}
+lb.querySelector('.lb-x').addEventListener('click',zam);
+lb.querySelector('.lb-p').addEventListener('click',function(){pokaz(poz-1)});
+lb.querySelector('.lb-nx').addEventListener('click',function(){pokaz(poz+1)});
+lb.addEventListener('click',function(e){if(e.target===lb)zam()});
+d.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')zam();if(e.key==='ArrowLeft')pokaz(poz-1);if(e.key==='ArrowRight')pokaz(poz+1)});
+var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)pokaz(poz+(dx<0?1:-1));tx=null});
+// mapa po kliknięciu
+d.getElementById('mapa-btn').addEventListener('click',function(){var f=d.createElement('iframe');f.title='Mapa dojazdu do pracowni';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';f.src='https://www.google.com/maps?q=al.+Wyszy%C5%84skiego+31,+94-047+%C5%81%C3%B3d%C5%BA&output=embed';var mp=d.getElementById('mapa');mp.innerHTML='';mp.appendChild(f)});
+// formularz pokazowy
+d.getElementById('form').addEventListener('submit',function(e){e.preventDefault();d.getElementById('form-info').textContent='To podgląd strony: formularz nie wysyła wiadomości. Na docelowej stronie zapytanie trafi na adres irena@wodzinowska.pl.'});
+})();
+
+</script>
+</body>
+</html>
